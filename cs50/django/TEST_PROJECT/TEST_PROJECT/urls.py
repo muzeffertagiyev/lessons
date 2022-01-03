@@ -22,5 +22,6 @@ from django.urls import path,include
 urlpatterns = [
     path('hello/',include("hello.urls")),
     path('admin/', admin.site.urls),
-    path('new_year/',include("new_year.urls"))
+    path('new_year/',include("new_year.urls")),
+    path('tasks/',include("tasks.urls"))
 ]

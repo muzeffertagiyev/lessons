@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        h1{
+            position:relative;
+            animation-name:move;
+            animation-duration:2s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+        }
+        @keyframes move {
+            0%{
+                left:0%;
+            }
+            50%{
+                left:50%;
+            }
+            100%{
+                left:0%;
+            }
+        }
+    </style>
+
+    <script src="animation.js"></script>
+</head>
+<body>
+    <button>Click here!</button>
+    <h1>Welcome!</h1>
+    
+</body>
+</html>

@@ -1,4 +1,4 @@
-/* body{
+body{
     background-image:url('images/London_Train_Station.jpeg');
     background-size:cover;
     background-repeat: no-repeat;
@@ -30,6 +30,22 @@ button{
     border-radius: 5px;
     
 }
-#increment-btn  ,#save {
+#increment-btn   {
     background:darkred;
-} */
+}
+
+#save {
+    background: green;
+}
+
+
+
+
+
+div p{
+    
+    color:burlywood;
+}
+div button{
+    color:black;
+}

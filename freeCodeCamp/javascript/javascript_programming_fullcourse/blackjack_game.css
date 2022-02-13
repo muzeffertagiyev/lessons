@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+    background-image: url("images/pexels-fwstudio-131634.jpg");
+    background-size:cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:40px;
+    color:white;
+    font-weight: bold;
+}
+
+h1{
+
+    color:goldenrod;
+}
+
+#message-el{
+    font-style: italic;
+}
+button{
+    border:none;
+    border-radius: 4px;
+    background-color:goldenrod;
+    padding:10px  30px;
+    color:#016f32;
+    font-weight: bold;
+}
+

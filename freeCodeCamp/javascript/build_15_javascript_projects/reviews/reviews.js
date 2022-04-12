@@ -53,7 +53,30 @@ const randomBtn=document.querySelector('.random-btn')
 let currentItem=0;
 
 window.addEventListener('DOMContentLoaded',function(){
-  showPerson()
+  //show next person
+    nextBtn.onclick=function(){
+      currentItem++
+      if(currentItem>reviews.length-1){
+        currentItem=0;
+      }
+      showPerson()
+    }
+
+    //show previous person
+    prevBtn.onclick=function(){
+      currentItem--
+      if(currentItem<0){
+        currentItem=reviews.length-1;
+      }
+      showPerson()
+    }
+
+    //show random person
+    randomBtn.onclick=function(){
+      currentItem=Math.floor(Math.random()*reviews.length)
+      showPerson()
+    }
+    showPerson()
 })
 
 //show person based on item
@@ -65,26 +88,3 @@ function showPerson(){
   info.textContent=item.text;
 }
 
-//show next person
-nextBtn.addEventListener('click',function(){
-  currentItem++
-  if(currentItem>reviews.length-1){
-    currentItem=0;
-  }
-  showPerson()
-})
-
-//show previous person
-prevBtn.addEventListener('click',function(){
-  currentItem--
-  if(currentItem<0){
-    currentItem=reviews.length-1;
-  }
-  showPerson()
-})
-
-//show random person
-randomBtn.addEventListener('click',function(){
-  currentItem=Math.floor(Math.random()*reviews.length)
-  showPerson()
-})
